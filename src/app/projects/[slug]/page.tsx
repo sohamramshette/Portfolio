@@ -11,6 +11,53 @@ import { ArrowLeft, ExternalLink, FileText, ImageIcon, CheckCircle2, Target, Zap
 import { FaGithub as Github } from "react-icons/fa"
 
 const projectDB: Record<string, any> = {
+  "scamshield": {
+    title: "ScamShield AI",
+    tagline: "An AI-powered cybersecurity platform designed to protect users from common digital frauds by analyzing suspicious websites, QR codes, and UPI IDs.",
+    overview: "ScamShield AI is an AI-powered cybersecurity platform designed to protect users from common digital frauds by analyzing suspicious websites, QR codes, and UPI IDs before users interact with them. The platform combines AI-generated explanations, threat intelligence, and risk scoring to help users understand potential cyber threats in a simple and actionable way.\n\nBuilt with a modern full-stack architecture, ScamShield AI focuses on making cybersecurity accessible to everyone through an intuitive interface and evidence-based threat analysis.",
+    problem: [
+      "Cyber fraud is becoming more sophisticated and frequent.",
+      "Users are targeted via phishing, fake QR codes, and fraudulent UPI IDs.",
+      "Existing security tools focus on single threats or generate technical reports.",
+      "Non-technical users struggle to understand complex security alerts.",
+      "Lack of a unified platform to analyze multiple fraud vectors."
+    ],
+    solution: [
+      "Provides a unified platform for multi-layer cyber fraud detection.",
+      "Analyzes websites, QR codes, and UPI IDs for threats.",
+      "Uses IBM Granite AI to generate human-readable threat explanations.",
+      "Calculates an overall security/risk score.",
+      "Generates downloadable PDF security reports.",
+      "Maintains user scan history for tracking."
+    ],
+    techStack: ["React", "FastAPI", "PostgreSQL", "IBM Granite AI", "Docker", "Tailwind CSS"],
+    features: [
+      "Website Security Scanner & Phishing Detection",
+      "QR Code Security Analysis & Redirection Check",
+      "UPI Risk Detection & Behavioral Pattern Analysis",
+      "AI-Powered Threat Explanations (IBM Watsonx)",
+      "Centralized Security Dashboard with Risk Scores",
+      "PDF Security Report Generation"
+    ],
+    workflow: [
+      "User submits a URL, QR code, or UPI ID.",
+      "FastAPI backend routes request to Threat Intelligence Engine.",
+      "Risk Scoring Algorithm calculates threat levels.",
+      "IBM Granite AI generates a simple, actionable explanation.",
+      "Results are securely saved to PostgreSQL.",
+      "User views analysis and downloads PDF report."
+    ],
+    stats: [
+      "3 Analysis Vectors",
+      "AI Explanations",
+      "Full-Stack Platform",
+      "Docker Deployed"
+    ],
+    github: "https://github.com/sohamramshette/ScamShield/",
+    demo: "https://scamshield-sr11.vercel.app/",
+    theme: "from-blue-600/30 to-purple-600/30",
+    accent: "text-blue-500"
+  },
   "admissionmate-ai": {
     title: "AdmissionMate AI",
     tagline: "Helping students make smarter college admission decisions using IBM Watsonx AI, Granite Models, LangFlow, and Retrieval-Augmented Generation (RAG).",

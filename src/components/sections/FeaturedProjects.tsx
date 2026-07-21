@@ -12,6 +12,17 @@ import { fadeIn } from "@/lib/motion"
 
 const projects = [
   {
+    slug: "scamshield",
+    title: "ScamShield AI",
+    description: "AI-powered cybersecurity platform protecting users from digital frauds by analyzing websites, QR codes, and UPI IDs.",
+    tags: ["React", "FastAPI", "IBM Granite AI", "PostgreSQL"],
+    github: "https://github.com/sohamramshette/ScamShield/",
+    demo: "https://scamshield-sr11.vercel.app/",
+    status: "Completed",
+    year: "July 2026",
+    color: "from-blue-500/30 to-purple-500/30",
+  },
+  {
     slug: "admissionmate-ai",
     title: "AdmissionMate AI",
     description: "AI college admission assistant helping students navigate the admission process with ease. Powered by advanced NLP.",
