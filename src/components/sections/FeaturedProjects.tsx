@@ -12,6 +12,17 @@ import { fadeIn } from "@/lib/motion"
 
 const projects = [
   {
+    slug: "quizzpulse",
+    title: "QuizzPulse",
+    description: "Real-time full-stack quiz platform featuring server-synchronized countdown timers, Socket.io updates, and automated leaderboard ranking.",
+    tags: ["React", "Node.js", "Socket.io", "MongoDB"],
+    github: "https://github.com/sohamramshette/QuizzPulse",
+    demo: "https://quize-phi-two.vercel.app/",
+    status: "Completed",
+    year: "August 2026",
+    color: "from-pink-500/30 to-rose-500/30",
+  },
+  {
     slug: "scamshield",
     title: "ScamShield AI",
     description: "AI-powered cybersecurity platform protecting users from digital frauds by analyzing websites, QR codes, and UPI IDs.",

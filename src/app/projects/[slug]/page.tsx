@@ -11,6 +11,49 @@ import { ArrowLeft, ExternalLink, FileText, ImageIcon, CheckCircle2, Target, Zap
 import { FaGithub as Github } from "react-icons/fa"
 
 const projectDB: Record<string, any> = {
+  "quizzpulse": {
+    title: "QuizzPulse",
+    tagline: "Live Interactive Quiz Web Application with Real-Time Analytics and Anti-Tampering Sync.",
+    overview: "QuizzPulse is a real-time full-stack quiz platform featuring dual Admin and Student roles, JWT authentication, server-synchronized countdown timers, Socket.io real-time updates, automated leaderboard ranking, and CSV results export.",
+    problem: [
+      "Traditional quiz apps suffer from local device time manipulation.",
+      "Lack of real-time monitoring for administrators during live tests.",
+      "Manual grading and leaderboard ranking is time-consuming.",
+      "Absence of instant feedback for students post-submission."
+    ],
+    solution: [
+      "Implemented a server-synchronized countdown clock unaffected by local device changes.",
+      "Created a Live Control Room Dashboard using Socket.io for real-time monitoring.",
+      "Automated leaderboard ranking with score and time-based tie-breakers.",
+      "Provided instant question-by-question correctness audit with celebratory UI."
+    ],
+    techStack: ["React", "Vite", "Tailwind CSS", "Socket.io", "Node.js", "Express", "MongoDB"],
+    features: [
+      "Secure Dual-Role Authentication (Admin/Student)",
+      "Quiz Creator Wizard with Time Overrides",
+      "Live Control Room Dashboard & Waiting Lobby",
+      "Anti-Tampering Timed Test Engine",
+      "Real-time Leaderboard & CSV Report Export",
+      "Auto Join Codes & Shareable Links"
+    ],
+    workflow: [
+      "Admin creates a quiz and generates a unique join code.",
+      "Students enter the waiting lobby using the code or link.",
+      "Admin launches the quiz, broadcasting synchronized start times.",
+      "Students take the anti-tamper timed test.",
+      "Scores are auto-calculated and broadcasted to the live leaderboard."
+    ],
+    stats: [
+      "Real-Time Sync",
+      "Anti-Tampering",
+      "CSV Exports",
+      "Dual Roles"
+    ],
+    github: "https://github.com/sohamramshette/QuizzPulse",
+    demo: "https://quize-phi-two.vercel.app/",
+    theme: "from-pink-600/30 to-rose-600/30",
+    accent: "text-pink-500"
+  },
   "scamshield": {
     title: "ScamShield AI",
     tagline: "An AI-powered cybersecurity platform designed to protect users from common digital frauds by analyzing suspicious websites, QR codes, and UPI IDs.",
